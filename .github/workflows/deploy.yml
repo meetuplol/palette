@@ -28,7 +28,7 @@ jobs:
         with:
           fetch-depth: 0
           repository: ${{ github.event.inputs.repository || 'meetuplol/palette' }}
-          ref: ${{ github.event.inputs.ref || 'main' }}
+          ref: ${{ github.event.inputs.ref || 'master' }}
       - name: Use Node.js v16
         uses: actions/setup-node@v3
         with:
