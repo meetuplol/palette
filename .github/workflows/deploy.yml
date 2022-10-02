@@ -16,7 +16,7 @@ on:
         default: meetuplol/palette
   push:
     branches:
-      - main
+      - master
 
 jobs:
   Publish:
