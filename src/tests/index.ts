@@ -1,7 +1,7 @@
-import { Palette } from '..';
+import { PaletteHex } from '..';
 
 const randomColor = () => {
-	const colors = Object.values(Palette);
+	const colors = Object.values(PaletteHex);
 	return colors[Math.floor(Math.random() * colors.length)];
 };
 
