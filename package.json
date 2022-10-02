@@ -1,12 +1,15 @@
 {
 	"name": "@meetuplol/palette",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"license": "Apache-2.0",
 	"contributors": [
 		"Tristan <contact@tristancamejo.com>"
 	],
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
+	"files": [
+		"dist"
+	],
 	"scripts": {
 		"build": "tsc -b src && rollup -c scripts/rollup.bundle.ts && gen-esm-wrapper dist/index.js dist/index.mjs",
 		"commit": "git-cz",
