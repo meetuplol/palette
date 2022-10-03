@@ -1,7 +1,7 @@
-import { PaletteHex, TailwindAdapter } from '..';
+import { MeetUpColorsHex, TailwindAdapter } from '..';
 
 const randomColor = () => {
-	const colors = Object.values(PaletteHex);
+	const colors = Object.values(MeetUpColorsHex);
 	return colors[Math.floor(Math.random() * colors.length)];
 };
 
