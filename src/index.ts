@@ -24,23 +24,23 @@ export const MeetUpColorsHex = {
 	...baseColors,
 	...(Object.keys(baseColors).reduce((acc, key) => {
 		// @ts-ignore
-		acc[key + '-100'] = lightenHex(baseColors[key], 100);
+		acc[key + '-100'] = lightenHex(baseColors[key], -100);
 		// @ts-ignore
-		acc[key + '-200'] = lightenHex(baseColors[key], 80);
+		acc[key + '-200'] = lightenHex(baseColors[key], -80);
 		// @ts-ignore
-		acc[key + '-300'] = lightenHex(baseColors[key], 60);
+		acc[key + '-300'] = lightenHex(baseColors[key], -60);
 		// @ts-ignore
-		acc[key + '-400'] = lightenHex(baseColors[key], 40);
+		acc[key + '-400'] = lightenHex(baseColors[key], -40);
 		// @ts-ignore
-		acc[key + '-500'] = lightenHex(baseColors[key], 20);
+		acc[key + '-500'] = lightenHex(baseColors[key], -20);
 		// @ts-ignore
-		acc[key + '-600'] = lightenHex(baseColors[key], 10);
+		acc[key + '-600'] = lightenHex(baseColors[key], -10);
 		// @ts-ignore
-		acc[key + '-700'] = lightenHex(baseColors[key], 5);
+		acc[key + '-700'] = lightenHex(baseColors[key], -5);
 		// @ts-ignore
-		acc[key + '-800'] = lightenHex(baseColors[key], 2);
+		acc[key + '-800'] = lightenHex(baseColors[key], -2);
 		// @ts-ignore
-		acc[key + '-900'] = lightenHex(baseColors[key], 1);
+		acc[key + '-900'] = lightenHex(baseColors[key], -1);
 		return acc as Record<`${keyof typeof baseColors}-${100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900}`, string>;
 	}, {}) as Record<`${keyof typeof baseColors}-${100 | 200 | 300 | 400 | 500 | 600 | 700 | 800 | 900}`, string>)
 };
