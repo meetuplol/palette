@@ -13,3 +13,12 @@ export enum PaletteHex {
  * MeetUp valid SCSS color variables.
  */
 export type Palette = keyof typeof PaletteHex;
+
+/*
+ * Tailwind color configuration.
+ */
+export const TailwindAdapter = Object.entries(PaletteHex).reduce((acc, [key, value]) => {
+	// @ts-ignore
+	acc[key] = value;
+	return acc;
+}, {} as Record<Palette, string>);

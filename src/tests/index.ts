@@ -1,4 +1,4 @@
-import { PaletteHex } from '..';
+import { PaletteHex, TailwindAdapter } from '..';
 
 const randomColor = () => {
 	const colors = Object.values(PaletteHex);
@@ -28,3 +28,5 @@ for (let i = 0; i < 10; i++) {
 chat.forEach(({ username, message }) => {
 	console.log(`${username}: ${message}`);
 });
+
+console.log('JSON Rep', TailwindAdapter);
